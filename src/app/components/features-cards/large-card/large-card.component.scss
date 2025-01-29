@@ -1,0 +1,68 @@
+:host {
+  width: 100%;
+}
+
+.large-card {
+  width: 100%;
+  padding: 47px 45px;
+  background: var(--background-color);
+  border-radius: 16px;
+  position: relative;
+
+  mat-card-header {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--header-color);
+    padding: unset;
+
+
+    .circle-icon {
+      width: 15px;
+      margin-right: 5px;
+      margin-bottom: 2px;
+    }
+  }
+
+  mat-card-content {
+    margin-top: 80px;
+
+    h3 {
+      max-width: 400px;
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 53px;
+      color: var(--header-color);
+      margin: 0 0 16px;
+    }
+
+    p {
+      color: var(--subtitle);
+    }
+  }
+
+  .dots-pattern {
+    position: absolute;
+    top: 50px;
+    right: 78px;
+    width: 250px;
+    height: 250px;
+
+    .dots {
+      width: 250px;
+      height: 250px;
+
+      @media screen and (max-width: 804px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    @media screen and (max-width: 804px) {
+      right: 20px;
+      top: 20px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

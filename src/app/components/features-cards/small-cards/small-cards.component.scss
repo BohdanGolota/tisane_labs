@@ -1,0 +1,65 @@
+.small-cards {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .small-card {
+    width: 629px;
+    height: 450px;
+
+    mat-card-content {
+      height: 100%;
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+
+
+      mat-icon {
+        height: 306px;
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 21px;
+        color: var(--header-color);
+        margin-bottom: 5px;
+      }
+
+      .sub-title {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--subtitle);
+      }
+    }
+  }
+
+  .saas {
+    background-image: url("../../../../../public/assets/cloud_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: var(--background-color);
+
+    .cloud {
+      width: 188.25px;
+    }
+  }
+
+  .tisane {
+    background-image: url("../../../../../public/assets/circles.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-color: var(--tisane-background);
+
+    .dots_db {
+      width: 152px;
+      height: 306px;
+    }
+  }
+}

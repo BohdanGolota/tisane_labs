@@ -1,0 +1,5 @@
+<div class="feature-list">
+@for (item of featureList; track item) {
+  <span class="feature-item" [class]="item.color">{{ item.text }}</span>
+}
+</div>

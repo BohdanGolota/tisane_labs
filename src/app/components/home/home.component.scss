@@ -1,0 +1,82 @@
+.top-section {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+
+  .blur {
+    height: 314px;
+    width: 99vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background: linear-gradient(to top, #F1F1F1, #FFFFFF00);
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.img-girl {
+  background-image: url("../../../../public/assets/widen.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: right;
+  width: 1440px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media screen and (max-width: 1420px) {
+    left: 0;
+  }
+
+  @media screen and (max-height: 1000px) {
+    background-size: unset;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 68px;
+  background: linear-gradient(to right, #ffffff, #f7f7f7);
+  justify-content: flex-end;
+  height: 800px;
+
+  max-width: calc(1440px - 68px);
+  margin: 0 auto;
+
+  &_position {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 3;
+
+    @media screen and (max-height: 933px) {
+      gap: unset;
+    }
+
+    @media screen and (max-width: 933px) {
+      gap: unset;
+      width: 100%;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+}
+
+.features {
+  padding: 0 20px 32px;
+  max-width: calc(1440px - 60px);
+  margin: 0 auto;
+}
+

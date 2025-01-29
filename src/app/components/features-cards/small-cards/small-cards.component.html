@@ -1,0 +1,16 @@
+<div class="small-cards">
+
+  @for (card of cards; track card){
+    <mat-card class="small-card" [class]="card.imageClass">
+      <mat-card-content>
+        <mat-icon [class]="card.icon" [svgIcon]="card.icon" aria-hidden="false"></mat-icon>
+        <div>
+          <p class="title">{{card.title}}</p>
+          <p class="sub-title">
+            {{card.subTitle}}
+          </p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  }
+</div>

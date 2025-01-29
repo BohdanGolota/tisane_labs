@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'MDIOTrial';
+  src: url('../../../public/fonts/MDIOTrial-Regular.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.btn {
+  font-family: 'MDIOTrial', sans-serif;
+  padding: 16px 24px;
+  background: transparent;
+  border-radius: 5px;
+  border-width: 1px;
+  color: #333333;
+  font-size: 12px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.btn-orange {
+  color: white;
+  background-color: #F35218;
+  border-color: #F35218;
+}
+
+.btn-black {
+  background-color: #333333;
+  border-color: #333333;
+  color: white;
+}
+
+.btn-silver-border {
+  border-color: #CECECE;
+}
+
+
+.gradient-box {
+  font-family: 'MDIOTrial', sans-serif;
+  padding: 16px 24px;
+  background: #b7b2b1;
+  border-radius: 5px;
+  color: #333333;
+  font-size: 12px;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  cursor: pointer;
+
+  margin: auto;
+  max-width: 22em;
+
+  position: relative;
+  box-sizing: border-box;
+
+  $border: 1px;
+  background-clip: padding-box;
+  border: solid $border transparent;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.8));
+  }
+}

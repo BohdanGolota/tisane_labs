@@ -1,0 +1,132 @@
+:host {
+  width: 100%;
+}
+
+.products-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+
+  @media screen and (max-width: 1300px) {
+    width: 100%
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .small-card {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    mat-card-header {
+      font-weight: 500;
+      font-size: 32px;
+    }
+  }
+
+  .first-card {
+    width: 30%;
+
+    @media screen and (max-width: 1024px) {
+      width: 450px;
+    }
+
+    mat-card-title {
+      margin: 28px;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      line-height: 35px;
+      font-weight: 600;
+      font-size: 32px;
+      color: var(--card-title-color);
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .product {
+      margin: 0 auto;
+      height: 355px;
+      width: 380px;
+      background-image: url("../../../../public/assets/product.png");
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: center;
+
+      &_text {
+        position: relative;
+        top: 10%;
+        left: 50%;
+
+        text-transform: uppercase;
+        color: var(--placeholder-text);
+        font-size: 9px;
+      }
+    }
+
+    mat-card-actions {
+      padding: unset;
+
+      .btn {
+        margin: 55px 28px;
+      }
+    }
+  }
+
+  .second-card {
+    background-image: url("../../../../public/assets/black-girl.png"), url("../../../../public/assets/black-girl.png");
+    background-color: var(--second-background);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: right;
+
+    width: 70%;
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+      width: 95%;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 400px;
+    }
+
+    mat-card-title {
+      margin: 28px;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      line-height: 35px;
+      font-weight: 600;
+      font-size: 32px;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    mat-card-actions {
+      padding: unset;
+
+      .btn {
+        border-color: var(--second-color);
+        color: var(--second-color);
+        margin: 55px 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "shared/styles/reseter";
+@import "shared/styles/buttons";
+@import "shared/styles/colors";
+
+@font-face {
+  font-family: 'SuisseIntlTrial';
+  src: url('../public/fonts/SuisseIntlTrial-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mat-body-large, .mat-typography .mat-body-large, .mat-typography, h3, h2, h1 {
+  font-family: 'SuisseIntlTrial', sans-serif !important;
+}
+
+html, body { height: 100% }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

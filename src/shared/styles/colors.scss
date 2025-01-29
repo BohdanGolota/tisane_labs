@@ -1,0 +1,33 @@
+:root {
+  //header
+  --header-gradient: linear-gradient(to right, #ffffff, #f7f7f7);
+  --navigate-gradient: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.8));
+  --links: #333333;
+
+  //content
+  --demo-color: #555;
+
+  //chips
+  --feature-background: #CECECE33;
+  --feature-color: #333;
+  --orange: #ff6600;
+  --black: #000;
+
+  //feature-title
+  --dot-background: #ff6600;
+  --title-color: #333333;
+  --subtitle: #706F6D;
+
+  //large-card
+  --background-color: #f7f7f7;
+  --header-color: #333333;
+
+  //small-cards
+  --tisane-background: #F7F7F7;
+
+  //product cards
+  --card-title-color: #111114;
+  --placeholder-text: #FF0000;
+  --second-background: #050505;
+  --second-color: #ffffff;
+}
