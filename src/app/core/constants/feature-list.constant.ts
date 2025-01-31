@@ -2,11 +2,11 @@ import { FeatureList } from '../interfaces/feature-list.interface';
 
 export const FEATURE_LIST: FeatureList[] = [
   {
-    text: 'Smart flagging of problematic content',
+    text: 'Multilingual word lists',
     color: 'orange'
   },
   {
-    text: 'Granular topic modeling',
+    text: 'Granular topic modelling',
     color: null
   },
   {
@@ -18,7 +18,7 @@ export const FEATURE_LIST: FeatureList[] = [
     color: 'black'
   },
   {
-    text: 'Multilingual word lists',
+    text: 'Flag problematic content',
     color: 'orange'
   },
   {

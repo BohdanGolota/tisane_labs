@@ -1,7 +1,7 @@
 .title {
   text-align: center;
-  max-width: 39%;
-  margin: 96px auto 40px;
+  max-width: 37%;
+  margin: 96px auto 68px;
 
   @media screen and (max-width: 900px) {
     max-width: 80%;
@@ -9,22 +9,25 @@
 
   &__dot {
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     background-color: var(--orange);
     border-radius: 50%;
-    margin: 0 auto 10px;
+    margin: 0 auto 14px;
   }
 
   h2 {
     font-size: 40px;
     font-weight: 600;
-    margin: unset;
     color: var(--title-color);
+    margin-bottom: 7px;
+    letter-spacing: -0.3px;
   }
 
   p {
     font-size: 14px;
     color: var(--subtitle);
+    line-height: 20px;
+    letter-spacing: -0.3px;
   }
 }

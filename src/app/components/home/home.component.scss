@@ -3,6 +3,10 @@
   position: relative;
   height: 100vh;
 
+  @media screen and (max-width: 530px) {
+    height: 940px;
+  }
+
   .blur {
     height: 314px;
     width: 99vw;
@@ -25,13 +29,13 @@
   height: 100vh;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -17px;
 
   @media screen and (max-width: 1420px) {
     left: 0;
   }
 
-  @media screen and (max-height: 1000px) {
+  @media screen and (max-height: 900px) {
     background-size: unset;
   }
 
@@ -44,27 +48,39 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0 68px;
+  padding: 0 68px 68px 68px;;
   background: linear-gradient(to right, #ffffff, #f7f7f7);
   justify-content: flex-end;
-  height: 800px;
-
+  height: clamp(30vh, 30vh + 51%, 81vh);
   max-width: calc(1440px - 68px);
   margin: 0 auto;
 
+  @media screen and (max-height: 700px) {
+    height: 510px;
+  }
+
+  @media screen and (max-width: 530px) {
+    height: 830px;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 880px;
+  }
+
   &_position {
-    width: 51%;
+    width: 47%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     z-index: 3;
+    gap: 197px;
 
     @media screen and (max-height: 933px) {
-      gap: unset;
+      //gap: unset;
     }
 
     @media screen and (max-width: 933px) {
-      gap: unset;
+      //gap: unset;
       width: 100%;
     }
   }

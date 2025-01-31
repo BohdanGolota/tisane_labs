@@ -1,16 +1,24 @@
+:host {
+  width: 100%;
+}
+
 .small-cards {
   display: flex;
-  gap: 20px;
+  gap: 28px;
   width: 100%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1288px) {
     flex-direction: column;
     align-items: center;
   }
 
   .small-card {
-    width: 629px;
+    width: 50%;
     height: 450px;
+
+    @media screen and (max-width: 651px) {
+      width: 80vw;
+    }
 
     mat-card-content {
       height: 100%;
@@ -18,16 +26,21 @@
       margin: 0 auto;
       text-align: center;
 
+      @media screen and (max-width: 470px) {
+        overflow: hidden;
+      }
+
 
       mat-icon {
-        height: 306px;
+        height: 249px;
+        margin-top: 43px;
       }
 
       .title {
         font-weight: 600;
         font-size: 21px;
         color: var(--title-color);
-        margin-bottom: 5px;
+        margin-bottom: 4px;
       }
 
       .sub-title {

@@ -1,12 +1,33 @@
 <div class="header">
   <nav class="navigate">
     <mat-icon class="logo" svgIcon="icon" aria-hidden="false"></mat-icon>
-    <a href="#">APIs</a>
-    <a href="#">Solutions</a>
-    <a href="#">Developers</a>
-    <a href="#">Demos</a>
-    <a href="#">Company</a>
-    <button class="btn btn-black">Log In</button>
-    <button class="btn-margin gradient-box btn-margin">Sign Up</button>
+    @if (isMobile()) {
+      <ng-content>
+        <button  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <nav class="mobile">
+            <a href="#">APIs</a>
+            <a href="#">Solutions</a>
+            <a href="#">Developers</a>
+            <a href="#">Demos</a>
+            <a href="#">Company</a>
+            <button class="btn btn-black">Log In</button>
+            <button class="btn-margin gradient-box btn-margin">Sign Up</button>
+          </nav>
+        </mat-menu>
+      </ng-content>
+    } @else {
+      <ng-content>
+        <a href="#">APIs</a>
+        <a href="#">Solutions</a>
+        <a href="#">Developers</a>
+        <a href="#">Demos</a>
+        <a href="#">Company</a>
+        <button class="btn btn-black padding">Log In</button>
+        <button class="btn-margin gradient-box btn-margin padding">Sign Up</button>
+      </ng-content>
+    }
   </nav>
 </div>

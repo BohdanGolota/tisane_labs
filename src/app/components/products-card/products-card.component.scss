@@ -20,7 +20,7 @@
 
 
   .small-card {
-    height: 600px;
+    height: 540px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -32,10 +32,14 @@
   }
 
   .first-card {
-    width: 30%;
+    width: 38%;
 
     @media screen and (max-width: 1024px) {
       width: 450px;
+    }
+
+    @media screen and (max-width: 470px) {
+      width: 80vw;
     }
 
     mat-card-title {
@@ -56,18 +60,22 @@
 
     .product {
       margin: 0 auto;
-      height: 355px;
-      width: 380px;
+      height: 346px;
+      width: 394px;
       background-image: url("../../../../public/assets/product.png");
       background-repeat: no-repeat;
-      background-size: 90%;
+      background-size: 100%;
       background-position: center;
+
+      @media screen and (max-width: 470px) {
+        width: 80vw;
+      }
 
       &_text {
         position: relative;
-        top: 10%;
-        left: 50%;
-
+        top: 3%;
+        left: 57%;
+        font-weight: 400;
         text-transform: uppercase;
         color: var(--placeholder-text);
         font-size: 9px;
@@ -75,11 +83,7 @@
     }
 
     mat-card-actions {
-      padding: unset;
-
-      .btn {
-        margin: 55px 28px;
-      }
+      padding: 0 0 54px 28px;
     }
   }
 
@@ -89,7 +93,7 @@
     background-repeat: no-repeat;
     background-size: 70% 100%;
     background-position: right;
-
+    border-radius: 10px;
     width: 70%;
     color: var(--second-color);
     display: flex;

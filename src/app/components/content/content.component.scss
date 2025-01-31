@@ -4,12 +4,22 @@
   h1 {
     font-size: 52px;
     font-weight: 600;
+    margin: 0 0 12px;
+    line-height: 46.8px;
+
+    @media screen and (max-height: 700px) {
+      font-size: 25px;
+      line-height: normal;
+    }
   }
 
   p {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--demo-color);
-    margin-bottom: 20px;
+    margin-bottom: 27px;
+    font-weight: 400;
+    line-height: 19.6px;
+    letter-spacing: -0.3px;
   }
 
   .actions {
@@ -19,6 +29,12 @@
 
     .btn-margin {
       margin-left: 10px;
+
+      @media screen and (max-width: 528px) {
+        margin-top: 20px;
+      }
     }
   }
 }
+
+

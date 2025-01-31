@@ -4,21 +4,28 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 8px;
-  margin-top: 20%;
-  padding-bottom: 64px;
+  //margin-top: 20%;
+
+  @media screen and (max-height: 600px) {
+    padding-bottom: 64px;
+    margin-top: 5%;
+  }
 }
 
 .feature-item {
   background: var(--feature-background);
   padding: 8px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 13.25px;
+  font-weight: 400;
   color: var(--title-color);
+  line-height: 18.34px;
+  letter-spacing: -0.3px;
 
   &::before {
     color: transparent;
     font-size: 20px;
-    margin-right: 8px;
+    margin-right: 5px;
     vertical-align: baseline;
   }
 
